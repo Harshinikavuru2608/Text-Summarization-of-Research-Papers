@@ -5,9 +5,15 @@ In the current era, while doing research in any domain, one of the major task of
 
 ## METHODOLOGY:
 A. Data Preprocessing: Figure 1. shows the preprocessing technique used in our implementation.
+<img width="1440" alt="Screenshot 2024-01-05 at 13 09 43" src="https://github.com/Harshinikavuru2608/Text-Summarization-of-Research-Papers/assets/125713954/78010eae-48b9-4e50-b779-17dd5a242a56">
 B. Implementation: Implemented both LSTM and PEGASUS models to see which one works the best for summarization.
 
 ## RESULTS:
 The LSTM and PEGASUS models are employed to generate abstractive summaries. After fine-tuning the PEGASUS model performed better than LSTM. Fig.2 shows the ROUGE-1, ROUGE-2, and ROUGE-L scores of LSTM model. The precision values of LSTM model are good. This shows us that most of the words produced by the system summary are overlapping with the original summary. However, by observing the output summary produced by LSTM model we observed it has many repeating words, making the summary less sensible.
+<img width="1440" alt="Screenshot 2024-01-05 at 13 11 32" src="https://github.com/Harshinikavuru2608/Text-Summarization-of-Research-Papers/assets/125713954/35598715-56be-4d62-8a78-a95eada06658">
+
+<img width="1440" alt="Screenshot 2024-01-05 at 13 11 37" src="https://github.com/Harshinikavuru2608/Text-Summarization-of-Research-Papers/assets/125713954/799a2f50-d9d7-43de-b8cf-e709c491e158">
+
 
 Fig.3. represents a graph showing ROUGE-1, ROUGE-2, and ROUGE-L scores of PEGASUS model. The model performed much better than LSTM. The ”ROUGE1, ROUGE2, and ROUGE-l” scores of Pegasus improved by 10% compared to the LSTM model. Fig.4 represents the comparison between the F1-scores of both the models. It can be observed that F1-scores of PEGASUS are much higher than LSTM. The recall values in all the ROUGE scores for PEGASUS model are good which indicates that the model’s summary is capturing most parts of the given summary. The output summary shown in Fig.5 is captioned as ”hypothesis”. It can be observed that the ”hypothesis” is very apt to the ”reference” which is the original summary. Thus, we can say that the performance improved greatly compared to LSTM.
+<img width="1440" alt="Screenshot 2024-01-05 at 13 11 48" src="https://github.com/Harshinikavuru2608/Text-Summarization-of-Research-Papers/assets/125713954/8414bfe3-dd61-4ffc-8122-78b4e33a0a0e">
